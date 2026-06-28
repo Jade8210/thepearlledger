@@ -1,0 +1,294 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Pearl Ledger</title>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ivory: #F6F0E8;
+  --dust-rose: #CFA7A3;
+  --champagne: #D6B98C;
+  --cocoa: #4A342D;
+  --pearl-gray: #B7B0A8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--cocoa);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  padding: 30px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: var(--pearl-gray);
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border: none;
+  text-decoration: none;
+  margin: 0 10px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.primary {
+  background: var(--dust-rose);
+  color: white;
+}
+
+.secondary {
+  border: 1px solid var(--cocoa);
+  color: var(--cocoa);
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.price {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.about {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.cta {
+  text-align: center;
+  background: var(--dust-rose);
+  color: white;
+  padding: 80px 20px;
+  border-radius: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--pearl-gray);
+}
+  ```css
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-image img {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+</style>
+</head>
+<body>
+
+<header class="container">
+  <div class="logo">The Pearl Ledger</div>
+</header>
+
+<section class="hero container">
+  <h1>High-Level Business Support for the Booked & Busy Founder</h1>
+  <p>
+    The trusted right hand behind your business, keeping every detail polished,
+    organized, and moving seamlessly.
+  </p>
+  <div class="buttons">
+    <a href="https://calendly.com/jadeuchoa6/30min" class="btn primary">Book a Discovery Call</a>
+    <a href="#services" class="btn secondary">View Services</a>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-title">
+    <h2>Behind Every Polished Business Is a Polished System</h2>
+  </div>
+  <div class="about">
+    <p>
+      Between emails, scheduling, travel, client communication, and the moving
+      pieces of daily business, things can quickly become overwhelming.
+      The Pearl Ledger exists to bring elegance, structure, and efficiency
+      behind the scenes.
+    </p>
+  </div>
+</section>
+
+<section id="services" class="container">
+  <div class="section-title">
+    <h2>Packages</h2>
+  </div>
+
+  <div class="services">
+
+    <div class="card">
+      <h3>The Essential Assistant</h3>
+      <ul>
+        <li>Calendar Management</li>
+        <li>Scheduling & Sending Emails</li>
+        <li>Appointment Setting</li>
+      </ul>
+      <div class="price">$600/month</div>
+    </div>
+
+    <div class="card">
+      <h3>The Visibility Assistant</h3>
+      <ul>
+        <li>Everything in Essential</li>
+        <li>Social Media Scheduling</li>
+        <li>Customer Service Emails</li>
+        <li>Website Upkeep</li>
+      </ul>
+      <div class="price">$1,200/month</div>
+    </div>
+
+    <div class="card">
+      <h3>Executive Assistant</h3>
+      <ul>
+        <li>Everything in Visibility</li>
+        <li>Inbox Management</li>
+        <li>Client Follow-Ups</li>
+        <li>Travel Research & Booking</li>
+      </ul>
+      <div class="price">$2,400/month</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-title">
+    <h2>Meet Your Right Hand</h2>
+  </div>
+
+  <div class="about-section">
+    <div class="about-image">
+      <img src="your-photo.jpg" alt="Photo of Jade">
+    </div>
+
+    <div class="about-text">
+      <p>
+        I help ambitious business owners maintain order, presence, and polish.
+        From inboxes to itineraries, I handle the details so you can focus on
+        growth, vision, and leadership.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="booking" class="container">
+  <div class="cta">
+    <h2>Book Your Discovery Call</h2>
+    <p>
+      Let’s discuss what’s on your plate and how The Pearl Ledger can support you.
+    </p>
+    <br/>
+    <a href="https://calendly.com/jadeuchoa6/30min" class="btn secondary">Book Now</a>
+  </div>
+</section>
+
+<footer>
+  <p>The Pearl Ledger • Luxury Executive Support</p>
+</footer>
+
+</body>
+</html>
+```
