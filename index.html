@@ -230,6 +230,28 @@ footer {
     margin: 8px auto;
     max-width: 240px;
     text-align: center;
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 18px;
+  border: 1px solid var(--pearl-gray);
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  background: white;
+}
+
+.contact-form button {
+  align-self: center;
+}
+
   }
 }
 </style>
@@ -338,6 +360,20 @@ footer {
     <br/>
     <a href="https://calendly.com/jadeuchoa6/30min" class="btn secondary">Book Now</a>
   </div>
+</section>
+
+<section id="contact" class="container">
+  <div class="section-title">
+    <h2>Contact Me</h2>
+    <p>Have a question? Send me a message.</p>
+  </div>
+
+  <form action="https://formsubmit.co/jadeuchoa6@gmail.com" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Ask any questions here..." required></textarea>
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
 </section>
 
 <footer>
