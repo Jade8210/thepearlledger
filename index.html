@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>The Pearl Ledger</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
@@ -47,7 +48,6 @@ header {
   font-size: 1.5rem;
   letter-spacing: 1px;
   font-family: 'Bodoni Moda', serif;
-  font-weight: 600;
 }
 
 .hero {
@@ -84,7 +84,9 @@ header {
   transition: opacity 0.2s;
 }
 
-.btn:hover { opacity: 0.85; }
+.btn:hover {
+  opacity: 0.85;
+}
 
 .primary {
   background: var(--dust-rose);
@@ -145,25 +147,17 @@ section {
   margin: auto;
 }
 
-/* Meet Your Right Hand */
 .about-section {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 60px;
   max-width: 1000px;
   margin: auto;
 }
 
-.about-image {
-  flex-shrink: 0;
-}
-
 .about-image img {
   width: 380px;
-height: 380px;
-max-width: 380px;
-max-height: 380px;
+  height: 380px;
   object-fit: cover;
   object-position: center top;
   border-radius: 20px;
@@ -200,37 +194,6 @@ max-height: 380px;
   color: var(--dust-rose);
 }
 
-footer {
-  text-align: center;
-  padding: 40px 0;
-  color: var(--pearl-gray);
-  font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  .hero h1 { font-size: 2.5rem; }
-
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-image img {
-    width: 100%;
-    max-width: 350px;
-    height: 400px;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .btn {
-    display: block;
-    margin: 8px auto;
-    max-width: 240px;
-    text-align: center;
-
 .contact-form {
   max-width: 700px;
   margin: auto;
@@ -252,10 +215,43 @@ footer {
   align-self: center;
 }
 
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--pearl-gray);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    margin: 8px auto;
+    max-width: 240px;
+    text-align: center;
   }
 }
 </style>
 </head>
+
 <body>
 
 <header class="container">
@@ -263,11 +259,12 @@ footer {
 </header>
 
 <section class="hero container">
-  <h1>High-Level Business Support for the Booked &amp; Busy Founder</h1>
+  <h1>High-Level Business Support for the Booked & Busy Founder</h1>
   <p>
     The trusted right hand behind your business, keeping every detail polished,
     organized, and moving seamlessly.
   </p>
+
   <div class="buttons">
     <a href="https://calendly.com/jadeuchoa6/30min" class="btn primary">Book a Discovery Call</a>
     <a href="#services" class="btn secondary">View Services</a>
@@ -278,12 +275,10 @@ footer {
   <div class="section-title">
     <h2>Behind Every Polished Business Is a Polished System</h2>
   </div>
+
   <div class="about">
     <p>
-      Between emails, scheduling, travel, client communication, and the moving
-      pieces of daily business, things can quickly become overwhelming.
-      The Pearl Ledger exists to bring elegance, structure, and efficiency
-      behind the scenes.
+      Between emails, scheduling, travel, client communication, and the moving pieces of daily business, things can quickly become overwhelming. The Pearl Ledger exists to bring elegance, structure, and efficiency behind the scenes.
     </p>
   </div>
 </section>
@@ -294,12 +289,11 @@ footer {
   </div>
 
   <div class="services">
-
     <div class="card">
       <h3>The Essential Assistant</h3>
       <ul>
         <li>Calendar Management</li>
-        <li>Scheduling &amp; Sending Emails</li>
+        <li>Scheduling & Sending Emails</li>
         <li>Appointment Setting</li>
       </ul>
       <div class="price">$600/month</div>
@@ -322,11 +316,10 @@ footer {
         <li>Everything in Visibility</li>
         <li>Inbox Organization</li>
         <li>Client Follow-Ups</li>
-        <li>Travel Research &amp; Booking</li>
+        <li>Travel Research & Booking</li>
       </ul>
       <div class="price">$2,400/month</div>
     </div>
-
   </div>
 </section>
 
@@ -337,15 +330,12 @@ footer {
 
   <div class="about-section">
     <div class="about-image">
-      <!-- Replace jade.jpg with your actual photo filename -->
       <img src="jade.jpg" alt="Photo of Jade">
     </div>
 
     <div class="about-text">
       <p>
-        Hi, I’m Jade! I help busy entrepreneurs maintain order, presence, and polish.
-        From inboxes to itineraries, I handle the details so you can focus on
-        growth, vision, and leadership.
+        Hi, I’m Jade! I help busy entrepreneurs maintain order, presence, and polish. From inboxes to itineraries, I handle the details so you can focus on growth, vision, and leadership.
       </p>
     </div>
   </div>
@@ -355,9 +345,9 @@ footer {
   <div class="cta">
     <h2>Book Your Discovery Call</h2>
     <p>
-      Let's discuss what's on your plate and how The Pearl Ledger can support you.
+      Let’s discuss what’s on your plate and how The Pearl Ledger can support you.
     </p>
-    <br/>
+    <br>
     <a href="https://calendly.com/jadeuchoa6/30min" class="btn secondary">Book Now</a>
   </div>
 </section>
