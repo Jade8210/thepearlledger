@@ -358,12 +358,25 @@ footer {
     <p>Have a question? Send me a message.</p>
   </div>
 
-  <form action="https://formsubmit.co/jadeuchoa6@gmail.com" method="POST" class="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="6" placeholder="Ask any questions here..." required></textarea>
-    <button type="submit" class="btn primary">Send Message</button>
-  </form>
+<form action="https://formsubmit.co/jadeuchoa6@gmail.com" method="POST" class="contact-form">
+
+  <!-- Spam protection goes HERE -->
+  <input type="hidden" name="_subject" value="New Pearl Ledger Inquiry">
+  <input type="hidden" name="_next" value="https://thepearlledger.com/thank-you.html">
+  <input type="text" name="_honey" style="display:none">
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Your normal form fields -->
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" rows="6" placeholder="Tell me about your business..." required></textarea>
+
+  <button type="submit" class="btn primary">Send Message</button>
+
+</form>
+
 </section>
 
 <footer>
